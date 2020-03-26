@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>e-PR</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/select2/select2.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="js/air-datepicker/datepicker.css" />
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- side -->
+                <div class="side">
+                    <div class="side-inner">
+                        <div class="side-logo"><img src="images/logo.png" alt="" /></div>
+                        <a href="#" class="side-menu-close"><div class="side-menu-close-line-1"></div><div class="side-menu-close-line-2"></div></a>
+                        <nav>
+                            <ul>
+                                <li class="active"><a href="#"><div class="nav-icon"><span><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.0494 17.8672L19.3665 2.05415C19.3547 0.915491 18.4198 0 17.2724 0H2.77672C1.62966 0 0.695087 0.915545 0.683284 2.05419L0.000834455 17.8708C0.000282638 17.8836 0 17.8978 0 17.9106C0 19.0619 0.939408 20 2.0941 20H17.9562C19.1109 20 20.0503 19.0601 20.0503 17.9088C20.0502 17.896 20.05 17.88 20.0494 17.8672ZM17.9562 18.2234H2.0941C1.92157 18.2234 1.78549 18.0901 1.77875 17.9228L2.46083 2.10917C2.46137 2.09635 2.46166 2.0888 2.46166 2.07604C2.46166 1.9052 2.60005 1.77658 2.77672 1.77658H17.2724C17.4494 1.77658 17.5882 1.90413 17.5882 2.07499C17.5882 2.08778 17.5884 2.09744 17.589 2.1102L18.2715 17.9244C18.2647 18.0916 18.1287 18.2234 17.9562 18.2234Z" /><path d="M12.9949 3.4541C12.5038 3.4541 12.0999 3.85222 12.0999 4.34335V7.03072C12.0999 8.16289 11.1737 9.08401 10.0334 9.08401C8.89368 9.08401 7.96799 8.16289 7.96799 7.03072V4.34335C7.96799 3.85222 7.5708 3.4541 7.0797 3.4541C6.58859 3.4541 6.19141 3.85222 6.19141 4.34335V7.03072C6.19141 9.14355 7.91975 10.8625 10.0401 10.8625C12.1611 10.8625 13.8899 9.14355 13.8899 7.03072V4.34335C13.8899 3.85222 13.486 3.4541 12.9949 3.4541Z" /></svg></span></div>Заказы</a></li>
+                                <li><a href="#"><div class="nav-icon"><span><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="nav-icon-stroke"><path d="M18.7778 19.3437V17.4096C18.7778 16.3837 18.3095 15.3999 17.476 14.6744C16.6425 13.949 15.5121 13.5415 14.3333 13.5415H5.44444C4.2657 13.5415 3.13524 13.949 2.30175 14.6744C1.46825 15.3999 1 16.3837 1 17.4096V19.3437" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.88878 9.67343C12.3434 9.67343 14.3332 7.94163 14.3332 5.80534C14.3332 3.66906 12.3434 1.93726 9.88878 1.93726C7.43418 1.93726 5.44434 3.66906 5.44434 5.80534C5.44434 7.94163 7.43418 9.67343 9.88878 9.67343Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></svg></span></div>Пользователи</a></li>
+                                <li><a href="#"><div class="nav-icon"><span><svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.996 0L0 9V22H7.996V16H12V22H20V9L9.996 0ZM18.004 20H13.996V14H6V20H1.996V9.828L9.996 2.828L18.004 9.828V20Z" /></svg></span></div>Компания</a></li>
+                                <li><a href="#"><div class="nav-icon"><span><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7436 5.78328H15.8174V3.83247C15.8174 3.05639 15.5091 2.31209 14.9604 1.76332C14.4116 1.21455 13.6673 0.90625 12.8912 0.90625H3.13716C2.36107 0.90625 1.61678 1.21455 1.06801 1.76332C0.519235 2.31209 0.210938 3.05639 0.210938 3.83247V9.6849C0.210938 10.461 0.519235 11.2053 1.06801 11.7541C1.61678 12.3028 2.36107 12.6111 3.13716 12.6111H4.64903L6.06337 14.1815V14.5327C6.06337 15.3088 6.37167 16.053 6.92044 16.6018C7.46921 17.1506 8.21351 17.4589 8.98959 17.4589H12.4523L13.9251 19.1268C14.0624 19.2825 14.2313 19.4072 14.4205 19.4926C14.6097 19.578 14.8149 19.6222 15.0225 19.6222C15.2301 19.6222 15.4353 19.578 15.6245 19.4926C15.8136 19.4072 15.9825 19.2825 16.1198 19.1268L17.5927 17.4589H18.7436C19.5197 17.4589 20.264 17.1506 20.8128 16.6018C21.3616 16.053 21.6699 15.3088 21.6699 14.5327V8.68023C21.6622 7.90924 21.3505 7.17244 20.8025 6.62998C20.2546 6.08752 19.5147 5.78324 18.7436 5.78328ZM3.13716 10.6603C2.87846 10.6603 2.63036 10.5575 2.44744 10.3746C2.26451 10.1917 2.16175 9.9436 2.16175 9.6849V3.83247C2.16175 3.57377 2.26451 3.32568 2.44744 3.14275C2.63036 2.95983 2.87846 2.85706 3.13716 2.85706H12.8912C13.1499 2.85706 13.398 2.95983 13.5809 3.14275C13.7639 3.32568 13.8666 3.57377 13.8666 3.83247V9.6849C13.8666 9.9436 13.7639 10.1917 13.5809 10.3746C13.398 10.5575 13.1499 10.6603 12.8912 10.6603H8.92131L7.22411 12.6111L5.5269 10.6603H3.13716ZM19.7191 14.5619C19.7191 14.8206 19.6163 15.0687 19.4334 15.2516C19.2504 15.4346 19.0023 15.5373 18.7436 15.5373H16.7246L15.0274 17.5662L13.3301 15.5373H8.98959C8.7309 15.5373 8.4828 15.4346 8.29987 15.2516C8.11695 15.0687 8.01418 14.8206 8.01418 14.5619C8.12602 14.4877 8.22767 14.3992 8.31656 14.2986L9.78942 12.6306H12.8912C13.6673 12.6306 14.4116 12.3223 14.9604 11.7736C15.5091 11.2248 15.8174 10.4805 15.8174 9.70441V7.7536H18.7436C19.0023 7.7536 19.2504 7.85636 19.4334 8.03929C19.6163 8.22221 19.7191 8.47031 19.7191 8.729V14.5619Z" /></svg><em>3</em></span></div>Поддержка</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- side END -->
+
+                <!-- container -->
+                <div class="container">
+
+                    <header>
+                        <a href="#" class="side-menu-link"><div class="side-menu-link-line-1"></div><div class="side-menu-link-line-2"></div><div class="side-menu-link-line-3"></div></a>
+                        <div class="header-user">
+                            <a href="#" class="header-user-link">
+                                <div class="header-user-link-avatar"><img src="images/header-avatar.svg" alt="" /></div>
+                                <div class="header-user-link-info">
+                                    <div class="header-user-link-name">Александр Летуновский</div>
+                                    <div class="header-user-link-company">менеджер</div>
+                                </div>
+                            </a>
+                        </div>
+                    </header>
+
+                    <h1><a href="#" class="back-link">Заказы<svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1L2 9.5L10 18" stroke-width="2"/></svg></a> Карточка заказа</h1>
+
+                    <!-- order card press -->
+                    <div class="order-card-press">
+                        <div class="order-card-press-title">Пресс-релиз</div>
+                        <!-- press item -->
+                        <div class="press-item">
+                            <div class="press-item-inner">
+                                <div class="press-item-content">
+                                    <div class="press-item-title"><a href="#">C 2005 года все коммерческие и пользовательские ссылки по правилам Google должны быть отмечены тегом rel=“nofollow”. Этим же тегом можно размечать и другие ссылки на свое усмотрение, если не хочется делиться «ссылочным соком» с другим сайтом.</a></div>
+                                    <div class="press-item-info">
+                                        <div class="press-item-date">27.10.2019 &nbsp;13:24:19<span class="press-item-hint">дата создания</span></div>
+                                        <div class="press-item-order-smi">компания: ООО «Херсонская строительная компания»</div>
+                                    </div>
+                                </div>
+
+                                <div class="press-item-media">
+                                    <div class="press-item-media-preview" style="background-image:url(files/press-item-3.jpg)"></div>
+                                    <div class="press-item-media-count">
+                                        <div class="press-item-media-count-value">+15</div>
+                                        <div class="press-item-media-count-unit">фото</div>
+                                    </div>
+                                </div>
+
+                                <div class="press-item-media">
+                                    <div class="press-item-media-preview press-item-media-preview-video" style="background-image:url(files/press-item-4.jpg)"></div>
+                                    <div class="press-item-media-count">
+                                        <div class="press-item-media-count-value">+4</div>
+                                        <div class="press-item-media-count-unit">видео</div>
+                                    </div>
+                                </div>
+
+                                <div class="press-item-menu">
+                                    <div class="press-item-menu-container">
+                                        <div class="press-item-menu-icon"></div>
+                                        <div class="press-item-menu-list">
+                                            <ul>
+                                                <li><a href="#"><span><img src="images/press-item-menu-edit.svg" alt="" /></span>Редактировать</a></li>
+                                                <li><a href="#"><span><img src="images/press-item-menu-down.svg" alt="" /></span>Выключить</a></li>
+                                                <li><a href="#"><span><img src="images/press-item-menu-remove.svg" alt="" /></span>Удалить</a></li>
+                                                <li><a href="#"><span><img src="images/press-item-menu-order.svg" alt="" /></span>Заказать публикацию</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- press item END -->
+                    </div>
+                    <!-- order card press END -->
+
+                    <!-- order card structure -->
+                    <div class="order-card-structure">
+                        <div class="order-card-structure-title">Состав заказа</div>
+
+                        <div class="order-card-finance">
+                            <div class="order-card-balance">
+                                <div class="order-card-finance-title">Баланс</div>
+                                <div class="order-card-finance-value">$ 1 599 <a href="#" class="btn">Пополнить</a></div>
+                            </div>
+                            <div class="order-card-summ">
+                                <div class="order-card-finance-title">Итоговая сумма</div>
+                                <div class="order-card-finance-value">$ 6 799</div>
+                            </div>
+                        </div>
+
+                        <!-- order content -->
+                        <div class="order-content">
+
+                            <!-- order content item -->
+                            <div class="order-content-item">
+                                <div class="order-content-item-content">
+                                    <div class="order-content-item-publishing">
+                                        <div class="order-content-item-publishing-inner">
+                                            <div class="order-content-item-publishing-logo"><div class="order-content-item-publishing-logo-inner"><img src="files/order-1.png" alt="" /></div></div>
+                                            <div class="order-content-item-publishing-info">
+                                                <div class="order-content-item-publishing-title">Аргументы и факты</div>
+                                                <div class="order-content-item-publishing-url"><a href="http://aif.ru" target="_blank">aif.ru</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-content-item-services">
+                                        <div class="order-content-item-services-more"><a href="#"><span>подробнее</span><span>скрыть</span></a></div>
+                                        <div class="order-content-item-service order-content-item-service-main">
+                                            <div class="order-content-item-service-title">Рекламная статья <div class="order-content-item-status order-content-item-status-1">на согласовании</div></div>
+                                            <div class="order-content-item-service-price">$ 2 599</div>
+                                        </div>
+                                        <div class="order-content-item-service">
+                                            <div class="order-content-item-service-title">Вывод на главную страницу</div>
+                                            <div class="order-content-item-service-price">$ 599</div>
+                                        </div>
+                                        <div class="order-content-item-service">
+                                            <div class="order-content-item-service-title">Дублирование в соцсетях</div>
+                                            <div class="order-content-item-service-price">$ 299</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- order content item END -->
+
+                            <!-- order content item -->
+                            <div class="order-content-item">
+                                <div class="order-content-item-content">
+                                    <div class="order-content-item-publishing">
+                                        <div class="order-content-item-publishing-inner">
+                                            <div class="order-content-item-publishing-logo"><div class="order-content-item-publishing-logo-inner"><img src="files/order-2.png" alt="" /></div></div>
+                                            <div class="order-content-item-publishing-info">
+                                                <div class="order-content-item-publishing-title">Коммерсант</div>
+                                                <div class="order-content-item-publishing-url"><a href="http://kommersant.ru" target="_blank">kommersant.ru</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-content-item-services">
+                                        <div class="order-content-item-services-more"><a href="#"><span>подробнее</span><span>скрыть</span></a></div>
+                                        <div class="order-content-item-service order-content-item-service-main">
+                                            <div class="order-content-item-service-title">Рекламная статья <div class="order-content-item-status order-content-item-status-2">не оплачено</div></div>
+                                            <div class="order-content-item-service-price">$ 2 599</div>
+                                        </div>
+                                        <div class="order-content-item-service">
+                                            <div class="order-content-item-service-title">Вывод на главную страницу</div>
+                                            <div class="order-content-item-service-price">$ 599</div>
+                                        </div>
+                                        <div class="order-content-item-service">
+                                            <div class="order-content-item-service-title">Дублирование в соцсетях</div>
+                                            <div class="order-content-item-service-price">$ 299</div>
+                                        </div>
+                                        <div class="order-content-item-service">
+                                            <div class="order-content-item-service-title">Вывод на главную страницу</div>
+                                            <div class="order-content-item-service-price">$ 199</div>
+                                        </div>
+                                        <div class="order-content-item-service">
+                                            <div class="order-content-item-service-title">Дублирование в соцсетях</div>
+                                            <div class="order-content-item-service-price">$ 299</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- order content item END -->
+
+                            <!-- order content item -->
+                            <div class="order-content-item">
+                                <div class="order-content-item-content">
+                                    <div class="order-content-item-publishing">
+                                        <div class="order-content-item-publishing-inner">
+                                            <div class="order-content-item-publishing-logo"><div class="order-content-item-publishing-logo-inner"><img src="files/order-3.png" alt="" /></div></div>
+                                            <div class="order-content-item-publishing-info">
+                                                <div class="order-content-item-publishing-title">Sporting News</div>
+                                                <div class="order-content-item-publishing-url"><a href="http://sportingnews.com" target="_blank">sportingnews.com</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-content-item-services">
+                                        <div class="order-content-item-services-more"><a href="#"><span>подробнее</span><span>скрыть</span></a></div>
+                                        <div class="order-content-item-service order-content-item-service-main">
+                                            <div class="order-content-item-service-title">Рекламная статья <div class="order-content-item-status order-content-item-status-1">на согласовании</div></div>
+                                            <div class="order-content-item-service-price">$ 2 599</div>
+                                        </div>
+                                        <div class="order-content-item-service">
+                                            <div class="order-content-item-service-title">Вывод на главную страницу</div>
+                                            <div class="order-content-item-service-price">$ 599</div>
+                                        </div>
+                                        <div class="order-content-item-service">
+                                            <div class="order-content-item-service-title">Дублирование в соцсетях</div>
+                                            <div class="order-content-item-service-price">$ 299</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- order content item END -->
+
+                        </div>
+                        <!-- order content END -->
+
+                    </div>
+                    <!-- order card structure END -->
+
+                </div>
+                <!-- container END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="container">
+                <div class="footer-left">
+                    <div class="footer-logo"><img src="images/footer-logo.png" alt="" /></div>
+                    <div class="copyrights">Компания e-PR — ваш онлайн пресс-центр. <span>© 2019—2020</span></div>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">Карта сайта</a></li>
+                        <li><a href="#">Правила сайта</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Политика возврата</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var pathTemplate = './';
+        </script>
+        <script src="js/fonts.js"></script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/air-datepicker/datepicker.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>
