@@ -451,6 +451,48 @@ header::after {content:""; display:block; clear:both}
     .header-user-link-info {display:none}
 }
 
+.header-user-menu {visibility:hidden; opacity:0; transition:all 0.45s; z-index:-1; transform:translateY(25px); position:absolute; width:340px; left:18px; top:100%; padding:30px 40px 16px 40px; margin:13px 0 0 -170px; background:#fff; border:1px solid #e5e5e5; box-shadow:0px 4px 30px rgba(102, 102, 102, 0.1); border-radius:3px}
+@media screen and (min-width:1200px) {
+    .header-user:hover .header-user-menu {visibility:visible; opacity:1; transform:none; z-index:999}
+    .header-user-menu::after {content:""; display:block; position:absolute; left:-1px; top:-37px; right:-1px; height:37px; background:url(../images/blank.gif)}
+}
+.header-user-menu::before {content:""; display:block; position:absolute; left:50%; top:-8px; margin-left:-7px; width:14px; height:14px; border-top:1px solid #e5e5e5; border-left:1px solid #e5e5e5; background:#fff; transform:rotate(45deg)}
+.header-user-menu-name {font-weight:600; font-size:18px; line-height:22px}
+.header-user-menu-avatar {display:none}
+.header-user-menu-company {margin:8px 0 0 0; font-weight:normal; font-size:16px; line-height:19px; color:#7d7d7d}
+.header-user-menu-list {margin:27px 0 0 0; border-top:1px solid #d4d4d4; padding:11px 0 0 0}
+.header-user-menu-list ul {margin:0; padding:0; list-style:none; font-size:16px; line-height:19px; font-weight:normal}
+.header-user-menu-list ul li {margin:0; padding:0}
+.header-user-menu-list ul li::before {display:none}
+.header-user-menu-list ul li a {display:block; position:relative; color:#222; text-decoration:none; padding:9px 0}
+.header-user-menu-list ul li a:hover {color:#5f94d0}
+.header-user-menu-list-support::after {content:""; display:block; position:absolute; right:0; top:50%; width:20px; height:20px; margin:-10px 0 0 0; background:url(../images/header-user-menu-support.svg) no-repeat}
+.header-user-menu-logout {margin:17px 0 0 0; border-top:1px solid #d4d4d4; padding:8px 0 0 0; font-weight:normal; font-size:16px; line-height:19px}
+.header-user-menu-logout a {display:block; padding:9px 0 9px 32px; text-decoration:none; position:relative; color:#222; background:url(../images/header-user-menu-logout.svg) no-repeat left center}
+.header-user-menu-logout a:hover {color:#5f94d0}
+.header-user-menu-close {display:none}
+
+@media screen and (max-width:1199px) {
+    .header-user-menu-open,
+    .header-user-menu-open body {overflow:hidden; position:fixed; left:0; top:0; right:0; bottom:0}
+    .header-user-menu {position:fixed; left:0; top:0; right:0; bottom:0; width:auto; padding:0; margin:0; transform:none; background:rgba(41, 41, 41, 0.8); border:none; box-shadow:none; border-radius:0}
+    .header-user-menu-open .header-user-menu {visibility:visible; opacity:1; transform:none; z-index:999}
+    .header-user-menu-inner {position:absolute; right:0; top:0; bottom:0; width:394px; overflow:auto; background:#fff}
+    .header-user-menu-name {padding:21px 50px 20px 104px; font-weight:normal; font-size:22px; line-height:29px}
+    .header-user-menu-name::after {content:""; display:block; clear:both}
+    .header-user-menu-avatar {display:block; float:left; width:59px; margin:-1px 0 0 -75px}
+    .header-user-menu-avatar img {display:block; width:100%; border:2px solid rgba(81, 129, 184, 0.6); border-radius:50%}
+    .header-user-menu-company {margin:0; background:#f5f7fb; border-top:1px solid #d6d6d6; font-size:28px; line-height:34px; color:#383838; font-weight:600; padding:29px 30px 33px 30px}
+    .header-user-menu-list {margin:0; border-top:none; padding:0}
+    .header-user-menu-list ul {font-size:26px; line-height:26px}
+    .header-user-menu-list ul li {border-top:1px solid #d6d6d6}
+    .header-user-menu-list ul li a {padding:27px 30px; color:#474747}
+    .header-user-menu-list-support::after {right:30px; width:30px; height:30px; margin:-15px 0 0 0; background:url(../images/header-user-menu-support-mobile.svg) no-repeat}
+    .header-user-menu-logout {margin:0; border-top:1px solid #d6d6d6; padding:0; font-size:26px; line-height:100px}
+    .header-user-menu-logout a {padding:0 0 0 78px; color:#474747; background:url(../images/header-user-menu-logout-mobile.svg) no-repeat 30px center}
+    .header-user-menu-close {display:block; position:absolute; right:394px; top:0; width:86px; height:86px; background:url(../images/header-user-menu-close.svg) no-repeat center}
+}
+
 .dashboard-header {margin:52px 0 9px 0}
 .dashboard-header::after {content:""; display:block; clear:both}
 .dashboard-header h1 {float:left; margin:0}
